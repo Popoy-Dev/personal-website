@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Profile from './../../public/kua-profile-poy.png'
+import Cms from './../../public/software.png'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -74,7 +75,7 @@ export default function Home() {
 
       <section>
         <div className='text-center'>
-          <div className='grid grid-cols-1 gap-2 md:grid-cols-2 md:mt-20 w-9/12 m-auto md:text-left'>
+          <div className='grid grid-cols-1 gap-2 md:grid-cols-2 md:mt-20 md:w-9/12 md:m-auto md:text-left'>
             <div className=''>
               <h3 className='text-xl md:text-6xl text-yellow-400 font-semibold'>
                 Hello,
@@ -101,7 +102,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className='grid grid-cols-1 gap-2 md:grid-cols-3 md:mt-20 w-9/12 m-auto'>
+          <div className='grid grid-cols-1 gap-2 md:grid-cols-3 md:mt-20 md:w-9/12 md:m-aut'>
             <div className='bg-slate-600 mx-5 py-8 rounded-lg my-6'>
               <p className='text-center text-yellow-400 text-6xl font-black'>
                 04
@@ -164,7 +165,7 @@ export default function Home() {
               account the system and expound the actual and praising pain was
               born.
             </p>
-            <div className='flex mx-4 mt-12 justify-between	'>
+            <div className='flex mx-4 mt-2 justify-between	'>
               <button
                 className={`px-8 bg-gray-900 hover:bg-gray-600 rounded-full py-2 mb-8 w-40 ${
                   isDevelopment === 'development' ? 'text-yellow-600' : ''
@@ -181,6 +182,23 @@ export default function Home() {
               >
                 Marketing
               </button>
+            </div>
+          </div>
+
+          <div className='grid grid-cols-1 gap-2 md:grid-cols-2'>
+            <div className='m-9 border-2 border-stone-200	p-8  rounded-lg'>
+              <div className='flex justify-center'>
+                <div className='rounded-full p-4 bg-gray-400'>
+                  <Image
+                    src={Cms}
+                    alt='Content Management System'
+                    width={80}
+                    height={80}
+                  />
+                </div>
+
+              </div>
+              <h2 className='text-center my-4 text-xl font-bold'>Web Development</h2>
             </div>
           </div>
         </div>
