@@ -2,17 +2,29 @@ import { useState } from 'react'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Profile from './../../public/kua-profile-poy.png'
-import Cms from './../../public/software.png'
+import WebDevelopment from './../../public/software.png'
+import Cms from './../../public/cms.png'
+import SoftwareSystem from './../../public/engineer.png'
+import Modal from '@/components/Modal'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const [navbar, setNavbar] = useState(false)
   const [isDevelopment, setIsDevelopment] = useState('development')
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   const handleServiceDisplay = (value: string) => {
     setIsDevelopment(value)
   }
+  const openModal = () => {
+    setIsModalOpen(true)
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false)
+  }
+
   return (
     <div className='bg-gradient-to-t from-sky-800 to-gray-800	h-screen overflow-x-auto	m'>
       <header className=''>
@@ -102,7 +114,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className='grid grid-cols-1 gap-2 md:grid-cols-3 md:mt-20 md:w-9/12 md:m-aut'>
+          <div className='grid grid-cols-1 gap-2 md:grid-cols-3 md:mt-20 md:w-9/12 md:m-auto'>
             <div className='bg-slate-600 mx-5 py-8 rounded-lg my-6'>
               <p className='text-center text-yellow-400 text-6xl font-black'>
                 04
@@ -185,8 +197,34 @@ export default function Home() {
             </div>
           </div>
 
-          <div className='grid grid-cols-1 gap-2 md:grid-cols-2'>
+          <div className='grid grid-cols-1 gap-2 md:grid-cols-3 md:w-9/12 md:m-auto'>
             <div className='m-9 border-2 border-stone-200	p-8  rounded-lg'>
+              <div className='flex justify-center'>
+                <div className='rounded-full p-4 bg-gray-400'>
+                  <Image
+                    src={WebDevelopment}
+                    alt='Content Management System'
+                    width={80}
+                    height={80}
+                  />
+                </div>
+              </div>
+              <h2 className='text-center my-4 text-xl font-bold'>
+                Web Development
+              </h2>
+              <p>
+                As a freelance web developer i need to become a fullstack
+                developer that i know frontend, backend, security of the
+                website, deployment, Testing and Debugging, Web Development
+                Concepts, continuous deployment (CI/CD) pipelines.
+              </p>
+
+              <h3 className='text-xl font-extrabold mt-4'>
+                {' '}
+                <span className='text-2xl'>&rarr;</span> Read more
+              </h3>
+            </div>
+            <div className='mx-9 border-2 border-stone-200 p-8 rounded-lg md:my-9'>
               <div className='flex justify-center'>
                 <div className='rounded-full p-4 bg-gray-400'>
                   <Image
@@ -196,9 +234,48 @@ export default function Home() {
                     height={80}
                   />
                 </div>
-
               </div>
-              <h2 className='text-center my-4 text-xl font-bold'>Web Development</h2>
+              <h2 className='text-center my-4 text-xl font-bold'>
+                Content Management System
+              </h2>
+
+              <Modal />
+
+              <p>
+                A Content Management System (CMS) is a software application or
+                platform that allows users to create, manage, and publish
+                digital content on the web without requiring advanced technical
+                knowledge. With a CMS, users can add, modify, and organize
+                content such as text, images, videos, and documents, all through
+                an intuitive interface.
+              </p>
+            </div>
+            <div className='m-9 border-2 border-stone-200	p-8 rounded-lg'>
+              <div className='flex justify-center'>
+                <div className='rounded-full p-4 bg-gray-400'>
+                  <Image
+                    src={SoftwareSystem}
+                    alt='Content Management System'
+                    width={80}
+                    height={80}
+                  />
+                </div>
+              </div>
+              <h2 className='text-center my-4 text-xl font-bold'>
+                Software Application
+              </h2>
+              <p>
+                A Software System, also known as a computer software system or
+                software application, refers to a collection of computer
+                programs and data designed to perform specific tasks or
+                functions. Software systems can range from simple applications,
+                like a calculator or text editor, to complex systems like
+                enterprise resource planning (ERP) software, customer
+                relationship management (CRM) software, or even operating
+                systems like Windows or macOS. Software systems are developed to
+                address specific needs or solve particular problems, and they
+                can be used across various industries and domains.
+              </p>
             </div>
           </div>
         </div>
