@@ -219,10 +219,8 @@ export default function Home() {
                 Concepts, continuous deployment (CI/CD) pipelines.
               </p>
 
-              <h3 className='text-xl font-extrabold mt-4'>
-                {' '}
-                <span className='text-2xl'>&rarr;</span> Read more
-              </h3>
+              <Modal />
+
             </div>
             <div className='mx-9 border-2 border-stone-200 p-8 rounded-lg md:my-9'>
               <div className='flex justify-center'>
@@ -239,7 +237,6 @@ export default function Home() {
                 Content Management System
               </h2>
 
-              <Modal />
 
               <p>
                 A Content Management System (CMS) is a software application or
