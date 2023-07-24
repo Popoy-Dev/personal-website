@@ -167,7 +167,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className='bg-gradient-to-t from-yellow-900 to-gray-500 mt-8'>
+          <div className='bg-gradient-to-t from-yellow-900 to-gray-500 mt-8 '>
+            <div className='md:w-8/12 m-auto'>
             <h1 className='text-white text-2xl font-bold pt-12 pb-4'>
               Popular Services
             </h1>
@@ -195,10 +196,11 @@ export default function Home() {
                 Marketing
               </button>
             </div>
+            </div>
           </div>
 
           <div className='grid grid-cols-1 gap-2 md:grid-cols-3 md:w-9/12 md:m-auto'>
-            <div className='m-9 border-2 border-stone-200	p-8  rounded-lg'>
+            <div className='my-9 mx-9 md:mx-2 border-2 border-stone-200	p-8 rounded-lg'>
               <div className='flex justify-center'>
                 <div className='rounded-full p-4 bg-gray-400'>
                   <Image
@@ -222,7 +224,7 @@ export default function Home() {
               <Modal />
 
             </div>
-            <div className='mx-9 border-2 border-stone-200 p-8 rounded-lg md:my-9'>
+            <div className='my-9 mx-9 md:mx-2 border-2 border-stone-200 p-8 rounded-lg md:my-9'>
               <div className='flex justify-center'>
                 <div className='rounded-full p-4 bg-gray-400'>
                   <Image
@@ -247,7 +249,7 @@ export default function Home() {
                 an intuitive interface.
               </p>
             </div>
-            <div className='m-9 border-2 border-stone-200	p-8 rounded-lg'>
+            <div className='my-9 mx-9 md:mx-2 border-2 border-stone-200	p-8 rounded-lg'>
               <div className='flex justify-center'>
                 <div className='rounded-full p-4 bg-gray-400'>
                   <Image
