@@ -221,7 +221,7 @@ export default function Home() {
                 Concepts, continuous deployment (CI/CD) pipelines.
               </p>
 
-              <Modal />
+              <Modal title="Web development" />
 
             </div>
             <div className='my-9 mx-9 md:mx-2 border-2 border-stone-200 p-8 rounded-lg md:my-9'>
@@ -248,6 +248,8 @@ export default function Home() {
                 content such as text, images, videos, and documents, all through
                 an intuitive interface.
               </p>
+              <Modal title="Content Management System" />
+
             </div>
             <div className='my-9 mx-9 md:mx-2 border-2 border-stone-200	p-8 rounded-lg'>
               <div className='flex justify-center'>
@@ -275,6 +277,8 @@ export default function Home() {
                 address specific needs or solve particular problems, and they
                 can be used across various industries and domains.
               </p>
+              <Modal title="Software Development" />
+
             </div>
           </div>
         </div>
