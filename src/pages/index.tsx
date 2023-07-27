@@ -4,7 +4,14 @@ import { Inter } from 'next/font/google'
 import Profile from './../../public/kua-profile-poy.png'
 import WebDevelopment from './../../public/software.png'
 import Cms from './../../public/cms.png'
+import WorkExperience from './../../public/work-experience.png'
 import SoftwareSystem from './../../public/engineer.png'
+import PCI from './../../public/PCI-Logo-Horizontal-Registered.png'
+import Arlov from './../../public/arlov.jpg'
+import Cell5 from './../../public/cell5.png'
+import MDSCSI from './../../public/mdscsi.png'
+import Metro from './../../public/metrobank.jpg'
+import Collabera from './../../public/collabera.jpg'
 import Modal from '@/components/Modal'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -24,6 +31,34 @@ export default function Home() {
   const closeModal = () => {
     setIsModalOpen(false)
   }
+
+  const workExperience = [
+    {
+      company: 'PCI Tech Center',
+      role: 'Web developer',
+      image: PCI,
+    },
+    {
+      company: 'Arlov',
+      role: 'Full Stack Developer',
+      image: Arlov,
+    },
+    {
+      company: 'Cell 5',
+      role: 'Software Engineer',
+      image: Cell5,
+    },
+    {
+      company: 'MDS Call Solution Inc.',
+      role: 'Technology Engineer',
+      image: MDSCSI,
+    },
+    {
+      company: 'Collabera Digital - Metrobank Client.',
+      role: 'React Js Developer',
+      image: Metro,
+    },
+  ]
 
   return (
     <div className='bg-gradient-to-t from-sky-800 to-gray-800	h-screen overflow-x-auto	m'>
@@ -169,33 +204,33 @@ export default function Home() {
 
           <div className='bg-gradient-to-t from-yellow-900 to-gray-500 mt-8 '>
             <div className='md:w-8/12 m-auto'>
-            <h1 className='text-white text-2xl font-bold pt-12 pb-4'>
-              Popular Services
-            </h1>
-            <p className='leading-8 text-center px-8 pb-8 text-base'>
-              Must explain to you how all this mistaken idea of denouncing
-              pleasure and praising pain was born and I will give you a complete
-              account the system and expound the actual and praising pain was
-              born.
-            </p>
-            <div className='flex mx-4 mt-2 justify-between	'>
-              <button
-                className={`px-8 bg-gray-900 hover:bg-gray-600 rounded-full py-2 mb-8 w-40 ${
-                  isDevelopment === 'development' ? 'text-yellow-600' : ''
-                } font-extrabold `}
-                onClick={() => handleServiceDisplay('development')}
-              >
-                Development
-              </button>
-              <button
-                className={`px-8 bg-gray-900 hover:bg-gray-600 rounded-full py-2 mb-8 w-40  ${
-                  isDevelopment === 'marketing' ? 'text-yellow-600' : ''
-                }  font-extrabold`}
-                onClick={() => handleServiceDisplay('marketing')}
-              >
-                Marketing
-              </button>
-            </div>
+              <h1 className='text-white text-2xl font-bold pt-12 pb-4'>
+                Popular Services
+              </h1>
+              <p className='leading-8 text-center px-8 pb-8 text-base'>
+                Must explain to you how all this mistaken idea of denouncing
+                pleasure and praising pain was born and I will give you a
+                complete account the system and expound the actual and praising
+                pain was born.
+              </p>
+              <div className='flex mx-4 mt-2 justify-between	'>
+                <button
+                  className={`px-8 bg-gray-900 hover:bg-gray-600 rounded-full py-2 mb-8 w-40 ${
+                    isDevelopment === 'development' ? 'text-yellow-600' : ''
+                  } font-extrabold `}
+                  onClick={() => handleServiceDisplay('development')}
+                >
+                  Development
+                </button>
+                <button
+                  className={`px-8 bg-gray-900 hover:bg-gray-600 rounded-full py-2 mb-8 w-40  ${
+                    isDevelopment === 'marketing' ? 'text-yellow-600' : ''
+                  }  font-extrabold`}
+                  onClick={() => handleServiceDisplay('marketing')}
+                >
+                  Marketing
+                </button>
+              </div>
             </div>
           </div>
 
@@ -221,8 +256,7 @@ export default function Home() {
                 Concepts, continuous deployment (CI/CD) pipelines.
               </p>
 
-              <Modal title="Web development" />
-
+              <Modal title='Web development' />
             </div>
             <div className='my-9 mx-9 md:mx-2 border-2 border-stone-200 p-8 rounded-lg md:my-9'>
               <div className='flex justify-center'>
@@ -239,7 +273,6 @@ export default function Home() {
                 Content Management System
               </h2>
 
-
               <p>
                 A Content Management System (CMS) is a software application or
                 platform that allows users to create, manage, and publish
@@ -248,8 +281,7 @@ export default function Home() {
                 content such as text, images, videos, and documents, all through
                 an intuitive interface.
               </p>
-              <Modal title="Content Management System" />
-
+              <Modal title='Content Management System' />
             </div>
             <div className='my-9 mx-9 md:mx-2 border-2 border-stone-200	p-8 rounded-lg'>
               <div className='flex justify-center'>
@@ -277,8 +309,55 @@ export default function Home() {
                 address specific needs or solve particular problems, and they
                 can be used across various industries and domains.
               </p>
-              <Modal title="Software Development" />
+              <Modal title='Software Development' />
+            </div>
+          </div>
 
+          <div className=' bg-gradient-to-br from-sky-800 via-grey to-pink-700 bg-center'>
+            <div className='grid grid-cols-1 gap-2 md:grid-cols-2 md:w-9/12 md:m-auto flex items-center'>
+              <div className='mt-10 mb-6 text-center md:text-left'>
+                <h1 className='text-4xl font-bold'>Work Experiences</h1>
+                <p className='my-6 text-xl'>
+                  I am very thankful for my previous job because i learn a lot
+                  from them!
+                </p>
+              </div>
+              <div className='text-right m-10'>
+                <Image src={WorkExperience} alt='Work experience' />
+              </div>
+              {workExperience &&
+                workExperience.map((list, i) => (
+               
+                    <div className='border-2 border-violet-200 my-9 mx-9 md:mx-2 p-8 rounded-lg' key={i}>
+                      <Image
+                        src={list.image}
+                        alt='PCI Tech Center'
+                        height={300}
+                        width={300}
+                        className='bg-white rounded-lg m-auto mb-6 h-60 w-60 object-contain	'
+                      />
+                      <h1 className='text-3xl font-bold'>{list.company}</h1>
+                      <p className='text-green-400 text-xl'>{list.role}</p>
+
+                      <h3 className='text-left text-bold text-lg mt-10 mb-6'>
+                        Web Developer at PCI Tech Center | Start-Up Experience
+                      </h3>
+                      {/* <p className='text-left '>
+                        {' '} 
+                        <span className='text-bold leading-10 mr-2'>   Full-Stack Expertise: </span>
+                        As the sole developer for the project, I embraced the
+                        challenges of full-stack development. On the front-end,
+                        I leveraged my creativity and expertise in HTML, CSS,
+                        and JavaScript to create intuitive user interfaces and
+                        seamless user experiences. Meanwhile, on the back-end, I
+                        delved into the world of server-side logic, employing
+                        technologies like Node.js [or other relevant
+                        technologies] to handle data processing, user
+                        authentication, and application logic.
+                      </p> */}
+                    </div>
+          
+                ))}
             </div>
           </div>
         </div>
