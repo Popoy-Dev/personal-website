@@ -13,6 +13,10 @@ import MDSCSI from './../../public/mdscsi.png'
 import Metro from './../../public/metrobank.jpg'
 import Collabera from './../../public/collabera.jpg'
 import Modal from '@/components/Modal'
+import TransitionExample from '@/components/ServiceModal'
+import ServicesModal from '@/components/ServiceModal'
+import { title } from 'process'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,32 +35,80 @@ export default function Home() {
   const closeModal = () => {
     setIsModalOpen(false)
   }
+  
 
   const workExperience = [
     {
       company: 'PCI Tech Center',
       role: 'Web developer',
       image: PCI,
+      content: {
+        title: 'Web Developer at PCI Tech Center | Start-Up Experience',
+        sentence: 'As a passionate web developer at PCI Tech Center,  a dynamic start-up, I had the unique opportunity to take ownership of an exciting project, where I single-handedly managed the entire development process. This experience allowed me to hone my skills across all aspects of web development, from crafting engaging front-end interfaces to architecting robust back-end systems and database structures.',
+        techStack:  {
+          frontEnd: 'Javascript, Jquery, CSS, Bootstrap, AJAX',
+          backEnd: 'PHP, Laravel, ',
+          database: 'phpMyAdmin, MySQL',
+          deployment: 'cPanel'
+        }
+      }
     },
+
     {
       company: 'Arlov',
       role: 'Full Stack Developer',
       image: Arlov,
+      content: {
+        title: 'Web Developer at PCI Tech Center | Start-Up Experience',
+        sentence: '',
+        techStack:  {
+          frontEnd: 'Javascript, Jquery, CSS, Bootstrap, AJAX, tailwind, Material UI, React, React Redux',
+          backEnd: 'PHP, Codeigniter',
+          database: 'phpMyAdmin, MySQL',
+        }
+      }
     },
     {
       company: 'Cell 5',
       role: 'Software Engineer',
       image: Cell5,
+      content: {
+        title: 'Web Developer at PCI Tech Center | Start-Up Experience',
+        sentence: '',
+        techStack:  {
+          frontEnd: 'Javascript, React, CSS, tailwind, Ant Design, React-Toolkit, React Saga, Syncfusion, Recharts',
+          backEnd: 'Laravel API',
+          database: 'phpMyAdmin, MySQL',
+        }
+      }
     },
     {
       company: 'MDS Call Solution Inc.',
       role: 'Technology Engineer',
       image: MDSCSI,
+      content: {
+        title: 'Web Developer at PCI Tech Center | Start-Up Experience',
+        sentence: '',
+        techStack:  {
+          frontEnd: 'Javascript, Jquery, CSS, Bootstrap, AJAX',
+          backEnd: 'PHP, Codeigniter',
+          database: 'Workbench, MySQL',
+        }
+      }
     },
     {
       company: 'Collabera Digital - Metrobank Client.',
       role: 'React Js Developer',
       image: Metro,
+      content: {
+        title: 'Web Developer at PCI Tech Center | Start-Up Experience',
+        sentence: '',
+        techStack:  {
+          frontEnd: 'React, Material UI, CSS',
+          backEnd: 'Node js, Loopback 3 and 4',
+          database: 'Mongodb',
+        }
+      }
     },
   ]
 
@@ -256,7 +308,7 @@ export default function Home() {
                 Concepts, continuous deployment (CI/CD) pipelines.
               </p>
 
-              <Modal title='Web development' />
+              <ServicesModal title='Web development' content={{ title: '', sentence: '', techStack: '' }} />
             </div>
             <div className='my-9 mx-9 md:mx-2 border-2 border-stone-200 p-8 rounded-lg md:my-9'>
               <div className='flex justify-center'>
@@ -281,7 +333,7 @@ export default function Home() {
                 content such as text, images, videos, and documents, all through
                 an intuitive interface.
               </p>
-              <Modal title='Content Management System' />
+              <ServicesModal title='Content Management System' content={{ title: '', sentence: '', techStack: '' }} />
             </div>
             <div className='my-9 mx-9 md:mx-2 border-2 border-stone-200	p-8 rounded-lg'>
               <div className='flex justify-center'>
@@ -309,7 +361,7 @@ export default function Home() {
                 address specific needs or solve particular problems, and they
                 can be used across various industries and domains.
               </p>
-              <Modal title='Software Development' />
+              <ServicesModal title='Software Development' content={{ title: '', sentence: '', techStack: '' }} />
             </div>
           </div>
 
@@ -321,6 +373,7 @@ export default function Home() {
                   I am very thankful for my previous job because i learn a lot
                   from them!
                 </p>
+
               </div>
               <div className='text-right m-10'>
                 <Image src={WorkExperience} alt='Work experience' />
@@ -338,23 +391,9 @@ export default function Home() {
                       />
                       <h1 className='text-3xl font-bold'>{list.company}</h1>
                       <p className='text-green-400 text-xl'>{list.role}</p>
+                      <ServicesModal title={list.company} content={list.content} />
 
-                      <h3 className='text-left text-bold text-lg mt-10 mb-6'>
-                        Web Developer at PCI Tech Center | Start-Up Experience
-                      </h3>
-                      {/* <p className='text-left '>
-                        {' '} 
-                        <span className='text-bold leading-10 mr-2'>   Full-Stack Expertise: </span>
-                        As the sole developer for the project, I embraced the
-                        challenges of full-stack development. On the front-end,
-                        I leveraged my creativity and expertise in HTML, CSS,
-                        and JavaScript to create intuitive user interfaces and
-                        seamless user experiences. Meanwhile, on the back-end, I
-                        delved into the world of server-side logic, employing
-                        technologies like Node.js [or other relevant
-                        technologies] to handle data processing, user
-                        authentication, and application logic.
-                      </p> */}
+
                     </div>
           
                 ))}
