@@ -18,11 +18,13 @@ import SoftwareDevelopment from './../../public/softwaredevelopment.png'
 
 interface ModalProps {
   title: string
-  content: { title: string; sentence: string; techStack: {} }
+  content: { title: string; sentence: string; techStack: {} },
+  design: number
 }
 const ServicesModal = ({
   title = '',
   content = { title: '', sentence: '', techStack: {} },
+  design = 1
 }: ModalProps) => {
   const [modalImage, setModalImage] = useState<StaticImageData | string>('')
   const OverlayOne = () => (
@@ -94,7 +96,7 @@ const ServicesModal = ({
         ml='4'
         mt='8'
         onClick={() => {
-          setOverlay(<OverlayTwo />)
+          setOverlay(design === 1 ?<OverlayTwo /> : <OverlayOne /> )
           onOpen()
         }}
         variant='solid'

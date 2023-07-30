@@ -41,6 +41,7 @@ export default function Home() {
       company: 'PCI Tech Center',
       role: 'Web developer',
       image: PCI,
+      design: 1,
       content: {
         title: 'Web Developer at PCI Tech Center | Start-Up Experience',
         sentence:
@@ -58,6 +59,7 @@ export default function Home() {
       company: 'Arlov',
       role: 'Full Stack Developer',
       image: Arlov,
+      design: 1,
       content: {
         title: 'Web Developer at PCI Tech Center | Start-Up Experience',
         sentence: '',
@@ -73,6 +75,7 @@ export default function Home() {
       company: 'Cell 5',
       role: 'Software Engineer',
       image: Cell5,
+      design: 1,
       content: {
         title: 'Web Developer at PCI Tech Center | Start-Up Experience',
         sentence: '',
@@ -88,6 +91,7 @@ export default function Home() {
       company: 'MDS Call Solution Inc.',
       role: 'Technology Engineer',
       image: MDSCSI,
+      design: 1,
       content: {
         title: 'Web Developer at PCI Tech Center | Start-Up Experience',
         sentence: '',
@@ -102,6 +106,7 @@ export default function Home() {
       company: 'Collabera Digital - Metrobank Client.',
       role: 'React Js Developer',
       image: Metro,
+      design: 1,
       content: {
         title: 'Web Developer at PCI Tech Center | Start-Up Experience',
         sentence: '',
@@ -119,10 +124,11 @@ export default function Home() {
       name: 'Pabili Grocery',
       role: 'Fullstack Developer / My Business Application',
       image: Pabiligrocery,
+      design: 2,
       content: {
-        title: 'Web Developer at PCI Tech Center | Start-Up Experience',
+        title: 'Pabili Grocery my start up',
         sentence:
-          'As a passionate web developer at PCI Tech Center,  a dynamic start-up, I had the unique opportunity to take ownership of an exciting project, where I single-handedly managed the entire development process. This experience allowed me to hone my skills across all aspects of web development, from crafting engaging front-end interfaces to architecting robust back-end systems and database structures.',
+        'When I was in my third year of college, I had a part-time job at my sister`s sari-sari store (convenience store). During that time, I had an idea to build an online sari-sari store. In 2018, I worked on the project and then tried to convince many people in my barangay (neighborhood) to use it. I created advertisements and introduced my application to some condominiums, but unfortunately, I didn`t get much response. Two years later, when the pandemic started, I began receiving a lot of online messages from people inquiring about how the application works and how they could place orders. Seizing this opportunity, I started selling products and upgraded my pabili grocery service. For about 2-3 months, the sales were good, and business was promising. However, my success attracted competitors, and soon, many similar applications emerged, which ultimately led to the downfall of my business. Nevertheless, this experience taught me valuable lessons about startups, entrepreneurship, and the importance of adapting to market changes.',
         techStack: {
           FrontEnd: 'Javascript, Jquery, CSS, Bootstrap, AJAX',
           BackEnd: 'PHP, Laravel, ',
@@ -225,7 +231,7 @@ export default function Home() {
           <div className='grid grid-cols-1 gap-2 md:grid-cols-3 md:mt-20 md:w-9/12 md:m-auto'>
             <div className='bg-slate-600 mx-5 py-8 rounded-lg my-6'>
               <p className='text-center text-yellow-400 text-6xl font-black'>
-                04
+                03
               </p>
               <p className='text-center text-white text-3xl font-bold mt-5'>
                 Year of Experience
@@ -332,6 +338,7 @@ export default function Home() {
               <ServicesModal
                 title='Web development'
                 content={{ title: '', sentence: '', techStack: '' }}
+                design={1}
               />
             </div>
             <div className='my-9 mx-9 md:mx-2 border-2 border-stone-200 p-8 rounded-lg md:my-9'>
@@ -360,6 +367,7 @@ export default function Home() {
               <ServicesModal
                 title='Content Management System'
                 content={{ title: '', sentence: '', techStack: '' }}
+                design={1}
               />
             </div>
             <div className='my-9 mx-9 md:mx-2 border-2 border-stone-200	p-8 rounded-lg'>
@@ -391,6 +399,7 @@ export default function Home() {
               <ServicesModal
                 title='Software Development'
                 content={{ title: '', sentence: '', techStack: '' }}
+                design={1}
               />
             </div>
           </div>
@@ -425,6 +434,7 @@ export default function Home() {
                     <ServicesModal
                       title={list.company}
                       content={list.content}
+                      design={list.design}
                     />
                   </div>
                 ))}
@@ -451,28 +461,11 @@ export default function Home() {
                       className='bg-white rounded-lg  object-contain	'
                     />
                     <p className='text-green-400 text-xl'>{list.role}</p>
-
-                    <p className='text-left'>
-                      When I was in my third year of college, I had a part-time
-                      job at my sister`s sari-sari store (convenience store).
-                      During that time, I had an idea to build an online
-                      sari-sari store. In 2018, I worked on the project and then
-                      tried to convince many people in my barangay
-                      (neighborhood) to use it. I created advertisements and
-                      introduced my application to some condominiums, but
-                      unfortunately, I didn`t get much response. Two years
-                      later, when the pandemic started, I began receiving a lot
-                      of online messages from people inquiring about how the
-                      application works and how they could place orders. Seizing
-                      this opportunity, I started selling products and upgraded
-                      my pabili grocery service. For about 2-3 months, the sales
-                      were good, and business was promising. However, my success
-                      attracted competitors, and soon, many similar applications
-                      emerged, which ultimately led to the downfall of my
-                      business. Nevertheless, this experience taught me valuable
-                      lessons about startups, entrepreneurship, and the
-                      importance of adapting to market changes.
-                    </p>
+                    <ServicesModal
+                      title={list.name}
+                      content={list.content}
+                      design={list.design}
+                    />
                   </div>
                 ))}
             </div>
