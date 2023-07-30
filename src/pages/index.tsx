@@ -12,11 +12,11 @@ import Cell5 from './../../public/cell5.png'
 import MDSCSI from './../../public/mdscsi.png'
 import Metro from './../../public/metrobank.jpg'
 import Collabera from './../../public/collabera.jpg'
+import Pabiligrocery from './../../public/pabiligrocery.png'
 import Modal from '@/components/Modal'
 import TransitionExample from '@/components/ServiceModal'
 import ServicesModal from '@/components/ServiceModal'
 import { title } from 'process'
-
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -35,7 +35,6 @@ export default function Home() {
   const closeModal = () => {
     setIsModalOpen(false)
   }
-  
 
   const workExperience = [
     {
@@ -44,14 +43,15 @@ export default function Home() {
       image: PCI,
       content: {
         title: 'Web Developer at PCI Tech Center | Start-Up Experience',
-        sentence: 'As a passionate web developer at PCI Tech Center,  a dynamic start-up, I had the unique opportunity to take ownership of an exciting project, where I single-handedly managed the entire development process. This experience allowed me to hone my skills across all aspects of web development, from crafting engaging front-end interfaces to architecting robust back-end systems and database structures.',
-        techStack:  {
-          frontEnd: 'Javascript, Jquery, CSS, Bootstrap, AJAX',
-          backEnd: 'PHP, Laravel, ',
-          database: 'phpMyAdmin, MySQL',
-          deployment: 'cPanel'
-        }
-      }
+        sentence:
+          'As a passionate web developer at PCI Tech Center,  a dynamic start-up, I had the unique opportunity to take ownership of an exciting project, where I single-handedly managed the entire development process. This experience allowed me to hone my skills across all aspects of web development, from crafting engaging front-end interfaces to architecting robust back-end systems and database structures.',
+        techStack: {
+          FrontEnd: 'Javascript, Jquery, CSS, Bootstrap, AJAX',
+          BackEnd: 'PHP, Laravel, ',
+          Database: 'phpMyAdmin, MySQL',
+          Deployment: 'cPanel',
+        },
+      },
     },
 
     {
@@ -61,12 +61,13 @@ export default function Home() {
       content: {
         title: 'Web Developer at PCI Tech Center | Start-Up Experience',
         sentence: '',
-        techStack:  {
-          frontEnd: 'Javascript, Jquery, CSS, Bootstrap, AJAX, tailwind, Material UI, React, React Redux',
-          backEnd: 'PHP, Codeigniter',
-          database: 'phpMyAdmin, MySQL',
-        }
-      }
+        techStack: {
+          FrontEnd:
+            'Javascript, Jquery, CSS, Bootstrap, AJAX, tailwind, Material UI, React, React Redux',
+          BackEnd: 'PHP, Codeigniter',
+          Database: 'phpMyAdmin, MySQL',
+        },
+      },
     },
     {
       company: 'Cell 5',
@@ -75,12 +76,13 @@ export default function Home() {
       content: {
         title: 'Web Developer at PCI Tech Center | Start-Up Experience',
         sentence: '',
-        techStack:  {
-          frontEnd: 'Javascript, React, CSS, tailwind, Ant Design, React-Toolkit, React Saga, Syncfusion, Recharts',
-          backEnd: 'Laravel API',
-          database: 'phpMyAdmin, MySQL',
-        }
-      }
+        techStack: {
+          FrontEnd:
+            'Javascript, React, CSS, tailwind, Ant Design, React-Toolkit, React Saga, Syncfusion, Recharts',
+          BackEnd: 'Laravel API',
+          Database: 'phpMyAdmin, MySQL',
+        },
+      },
     },
     {
       company: 'MDS Call Solution Inc.',
@@ -89,12 +91,12 @@ export default function Home() {
       content: {
         title: 'Web Developer at PCI Tech Center | Start-Up Experience',
         sentence: '',
-        techStack:  {
-          frontEnd: 'Javascript, Jquery, CSS, Bootstrap, AJAX',
-          backEnd: 'PHP, Codeigniter',
-          database: 'Workbench, MySQL',
-        }
-      }
+        techStack: {
+          FrontEnd: 'Javascript, Jquery, CSS, Bootstrap, AJAX',
+          BackEnd: 'PHP, Codeigniter',
+          Database: 'Workbench, MySQL',
+        },
+      },
     },
     {
       company: 'Collabera Digital - Metrobank Client.',
@@ -103,12 +105,31 @@ export default function Home() {
       content: {
         title: 'Web Developer at PCI Tech Center | Start-Up Experience',
         sentence: '',
-        techStack:  {
-          frontEnd: 'React, Material UI, CSS',
-          backEnd: 'Node js, Loopback 3 and 4',
-          database: 'Mongodb',
-        }
-      }
+        techStack: {
+          FrontEnd: 'React, Material UI, CSS',
+          BackEnd: 'Node js, Loopback 3 and 4',
+          Database: 'Mongodb',
+        },
+      },
+    },
+  ]
+
+  const personalProjects = [
+    {
+      name: 'Pabili Grocery',
+      role: 'Fullstack Developer / My Business Application',
+      image: Pabiligrocery,
+      content: {
+        title: 'Web Developer at PCI Tech Center | Start-Up Experience',
+        sentence:
+          'As a passionate web developer at PCI Tech Center,  a dynamic start-up, I had the unique opportunity to take ownership of an exciting project, where I single-handedly managed the entire development process. This experience allowed me to hone my skills across all aspects of web development, from crafting engaging front-end interfaces to architecting robust back-end systems and database structures.',
+        techStack: {
+          FrontEnd: 'Javascript, Jquery, CSS, Bootstrap, AJAX',
+          BackEnd: 'PHP, Laravel, ',
+          Database: 'phpMyAdmin, MySQL',
+          Deployment: 'cPanel',
+        },
+      },
     },
   ]
 
@@ -308,7 +329,10 @@ export default function Home() {
                 Concepts, continuous deployment (CI/CD) pipelines.
               </p>
 
-              <ServicesModal title='Web development' content={{ title: '', sentence: '', techStack: '' }} />
+              <ServicesModal
+                title='Web development'
+                content={{ title: '', sentence: '', techStack: '' }}
+              />
             </div>
             <div className='my-9 mx-9 md:mx-2 border-2 border-stone-200 p-8 rounded-lg md:my-9'>
               <div className='flex justify-center'>
@@ -333,7 +357,10 @@ export default function Home() {
                 content such as text, images, videos, and documents, all through
                 an intuitive interface.
               </p>
-              <ServicesModal title='Content Management System' content={{ title: '', sentence: '', techStack: '' }} />
+              <ServicesModal
+                title='Content Management System'
+                content={{ title: '', sentence: '', techStack: '' }}
+              />
             </div>
             <div className='my-9 mx-9 md:mx-2 border-2 border-stone-200	p-8 rounded-lg'>
               <div className='flex justify-center'>
@@ -361,7 +388,10 @@ export default function Home() {
                 address specific needs or solve particular problems, and they
                 can be used across various industries and domains.
               </p>
-              <ServicesModal title='Software Development' content={{ title: '', sentence: '', techStack: '' }} />
+              <ServicesModal
+                title='Software Development'
+                content={{ title: '', sentence: '', techStack: '' }}
+              />
             </div>
           </div>
 
@@ -373,29 +403,77 @@ export default function Home() {
                   I am very thankful for my previous job because i learn a lot
                   from them!
                 </p>
-
               </div>
               <div className='text-right m-10'>
                 <Image src={WorkExperience} alt='Work experience' />
               </div>
               {workExperience &&
                 workExperience.map((list, i) => (
-               
-                    <div className='border-2 border-violet-200 my-9 mx-9 md:mx-2 p-8 rounded-lg' key={i}>
-                      <Image
-                        src={list.image}
-                        alt='PCI Tech Center'
-                        height={300}
-                        width={300}
-                        className='bg-white rounded-lg m-auto mb-6 h-60 w-60 object-contain	'
-                      />
-                      <h1 className='text-3xl font-bold'>{list.company}</h1>
-                      <p className='text-green-400 text-xl'>{list.role}</p>
-                      <ServicesModal title={list.company} content={list.content} />
+                  <div
+                    className='border-2 border-violet-200 my-9 mx-9 md:mx-2 p-8 rounded-lg'
+                    key={i}
+                  >
+                    <Image
+                      src={list.image}
+                      alt='PCI Tech Center'
+                      height={300}
+                      width={300}
+                      className='bg-white rounded-lg m-auto mb-6 h-60 w-60 object-contain	'
+                    />
+                    <h1 className='text-3xl font-bold'>{list.company}</h1>
+                    <p className='text-green-400 text-xl'>{list.role}</p>
+                    <ServicesModal
+                      title={list.company}
+                      content={list.content}
+                    />
+                  </div>
+                ))}
+            </div>
+          </div>
 
+          <div className=' bg-gradient-to-br from-pink-800 via-grey to-green-700 bg-center'>
+            <div className=' mb-6 text-center  md:w-9/12 mx-4'>
+              <h1 className='text-4xl font-bold pt-10 '>My Projects</h1>
+              <p className='my-6 text-xl'>
+                I have worked on some side projects during my free time.
+              </p>
+            </div>
 
-                    </div>
-          
+            <div className='grid grid-cols-1 gap-2 md:grid-cols-2 md:w-9/12 md:m-auto h-full'>
+              {personalProjects &&
+                personalProjects.map((list, i) => (
+                  <div className='border-2 border-red-200 rounded-lg mx-10' key={i}>
+                    <Image
+                      src={list.image}
+                      alt='PCI Tech Center'
+                      height={1000}
+                      width={1000}
+                      className='bg-white rounded-lg  object-contain	'
+                    />
+                    <p className='text-green-400 text-xl'>{list.role}</p>
+
+                    <p className='text-left'>
+                      When I was in my third year of college, I had a part-time
+                      job at my sister`s sari-sari store (convenience store).
+                      During that time, I had an idea to build an online
+                      sari-sari store. In 2018, I worked on the project and then
+                      tried to convince many people in my barangay
+                      (neighborhood) to use it. I created advertisements and
+                      introduced my application to some condominiums, but
+                      unfortunately, I didn`t get much response. Two years
+                      later, when the pandemic started, I began receiving a lot
+                      of online messages from people inquiring about how the
+                      application works and how they could place orders. Seizing
+                      this opportunity, I started selling products and upgraded
+                      my pabili grocery service. For about 2-3 months, the sales
+                      were good, and business was promising. However, my success
+                      attracted competitors, and soon, many similar applications
+                      emerged, which ultimately led to the downfall of my
+                      business. Nevertheless, this experience taught me valuable
+                      lessons about startups, entrepreneurship, and the
+                      importance of adapting to market changes.
+                    </p>
+                  </div>
                 ))}
             </div>
           </div>
