@@ -214,7 +214,7 @@ export default function Home() {
               </h1>
 
               <p className='p-4 leading-loose md:text-xl md:p-0 md:my-10'>
-              Welcome to my personal website! I am a passionate full-stack web developer, dedicated to creating innovative solutions and continuously exploring the ever-evolving world of technology. Let's embark on this exciting journey together!
+              Welcome to my personal website! I am a passionate full-stack web developer, dedicated to creating innovative solutions and continuously exploring the ever-evolving world of technology. Let`s embark on this exciting journey together!
               </p>
 
               <button className='bg-green-500 hover:bg-green-700 rounded-2xl px-8 py-2 font-semibold'>
