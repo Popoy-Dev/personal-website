@@ -122,7 +122,7 @@ export default function Home() {
   const personalProjects = [
     {
       name: 'Pabili Grocery',
-      role: 'Fullstack Developer / My Business Application',
+      role: 'Fullstack Developer / My Owner',
       image: Pabiligrocery,
       design: 2,
       content: {
@@ -445,7 +445,7 @@ export default function Home() {
             <div className='grid grid-cols-1 gap-2 md:grid-cols-2 md:w-9/12 md:m-auto h-full'>
               {personalProjects &&
                 personalProjects.map((list, i) => (
-                  <div className='border-2 border-red-200 rounded-lg mx-10' key={i}>
+                  <div className='border-2 border-red-200 rounded-lg mx-10 pb-8' key={i}>
                     <Image
                       src={list.image}
                       alt='PCI Tech Center'
@@ -453,7 +453,7 @@ export default function Home() {
                       width={1000}
                       className='bg-white rounded-lg  object-contain	'
                     />
-                    <p className='text-green-400 text-xl'>{list.role}</p>
+                    <p className='text-green-400 text-xl mt-4'>{list.role}</p>
                     <ServicesModal
                       title={list.name}
                       content={list.content}
