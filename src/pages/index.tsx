@@ -214,8 +214,7 @@ export default function Home() {
               </h1>
 
               <p className='p-4 leading-loose md:text-xl md:p-0 md:my-10'>
-                Must explain to how all this mistaken idea denouncing pleasure
-                pain the system and expound the actua.
+              Welcome to my personal website! I am a passionate full-stack web developer, dedicated to creating innovative solutions and continuously exploring the ever-evolving world of technology. Let's embark on this exciting journey together!
               </p>
 
               <button className='bg-green-500 hover:bg-green-700 rounded-2xl px-8 py-2 font-semibold'>
@@ -243,10 +242,7 @@ export default function Home() {
                 My Advantage
               </h1>
               <p className='text-white leading-7'>
-                Must explain to you how all this mistaken idea of denouncing
-                pleasure and praising pain was born and I will give you a
-                complete account the system and expound the actual and praising
-                pain was born.
+              With a robust skill set encompassing JavaScript, CSS, React, Laravel, and more, I leverage the power of cutting-edge technologies to craft dynamic and visually stunning web experiences that leave a lasting impression on users.
               </p>
 
               <div className='grid grid-cols-2 md:grid-cols-3 gap-4 py-4 text-center'>
@@ -287,10 +283,7 @@ export default function Home() {
                 Popular Services
               </h1>
               <p className='leading-8 text-center px-8 pb-8 text-base'>
-                Must explain to you how all this mistaken idea of denouncing
-                pleasure and praising pain was born and I will give you a
-                complete account the system and expound the actual and praising
-                pain was born.
+              Unlock the true potential of your ideas with my popular services in web development, CMS solutions, and software applications. From concept to reality, I am here to turn your vision into a seamless and remarkable digital reality that exceeds all expectations.
               </p>
               <div className='flex mx-4 mt-2 justify-between	'>
                 <button
