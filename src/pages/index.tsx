@@ -285,7 +285,7 @@ export default function Home() {
               <p className='leading-8 text-center px-8 pb-8 text-base'>
               Unlock the true potential of your ideas with my popular services in web development, CMS solutions, and software applications. From concept to reality, I am here to turn your vision into a seamless and remarkable digital reality that exceeds all expectations.
               </p>
-              <div className='flex mx-4 mt-2 justify-between	'>
+              {/* <div className='flex mx-4 mt-2 justify-between	'>
                 <button
                   className={`px-8 bg-gray-900 hover:bg-gray-600 rounded-full py-2 mb-8 w-40 ${
                     isDevelopment === 'development' ? 'text-yellow-600' : ''
@@ -302,7 +302,7 @@ export default function Home() {
                 >
                   Marketing
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
 
