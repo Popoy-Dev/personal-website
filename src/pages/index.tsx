@@ -222,8 +222,8 @@ export default function Home() {
               </button>
             </div>
 
-            <div className='w-6/12 h-6/12 mx-auto mt-5'>
-              <Image src={Profile} alt='Profile' className='rounded-full' />
+            <div className='w-6/12 h-6/12 md:w-full md:h-full mx-auto  mt-5'>
+              <Image src={Profile} alt='Profile' className='rounded-full md:w-9/12 md:h-6/6 md:mx-auto' />
             </div>
           </div>
 
