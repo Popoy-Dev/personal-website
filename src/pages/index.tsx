@@ -13,6 +13,7 @@ import MDSCSI from './../../public/mdscsi.png'
 import Metro from './../../public/metrobank.jpg'
 import Collabera from './../../public/collabera.jpg'
 import Pabiligrocery from './../../public/pabiligrocery.png'
+import Buysikleta from './../../public/buysikleta.png'
 import Modal from '@/components/Modal'
 import TransitionExample from '@/components/ServiceModal'
 import ServicesModal from '@/components/ServiceModal'
@@ -127,6 +128,23 @@ export default function Home() {
       design: 2,
       content: {
         title: 'Pabili Grocery my start up',
+        sentence:
+        'When I was in my third year of college, I had a part-time job at my sister`s sari-sari store (convenience store). During that time, I had an idea to build an online sari-sari store. In 2018, I worked on the project and then tried to convince many people in my barangay (neighborhood) to use it. I created advertisements and introduced my application to some condominiums, but unfortunately, I didn`t get much response. Two years later, when the pandemic started, I began receiving a lot of online messages from people inquiring about how the application works and how they could place orders. Seizing this opportunity, I started selling products and upgraded my pabili grocery service. For about 2-3 months, the sales were good, and business was promising. However, my success attracted competitors, and soon, many similar applications emerged, which ultimately led to the downfall of my business. Nevertheless, this experience taught me valuable lessons about startups, entrepreneurship, and the importance of adapting to market changes.',
+        techStack: {
+          FrontEnd: 'Javascript, Jquery, CSS, Bootstrap, AJAX',
+          BackEnd: 'PHP, Laravel, ',
+          Database: 'phpMyAdmin, MySQL',
+          Deployment: 'cPanel',
+        },
+      },
+    },
+    {
+      name: 'Buysikleta',
+      role: 'Fullstack Developer / Subdivision Project',
+      image: Buysikleta,
+      design: 2,
+      content: {
+        title: 'Buysikleta Subdivision project',
         sentence:
         'When I was in my third year of college, I had a part-time job at my sister`s sari-sari store (convenience store). During that time, I had an idea to build an online sari-sari store. In 2018, I worked on the project and then tried to convince many people in my barangay (neighborhood) to use it. I created advertisements and introduced my application to some condominiums, but unfortunately, I didn`t get much response. Two years later, when the pandemic started, I began receiving a lot of online messages from people inquiring about how the application works and how they could place orders. Seizing this opportunity, I started selling products and upgraded my pabili grocery service. For about 2-3 months, the sales were good, and business was promising. However, my success attracted competitors, and soon, many similar applications emerged, which ultimately led to the downfall of my business. Nevertheless, this experience taught me valuable lessons about startups, entrepreneurship, and the importance of adapting to market changes.',
         techStack: {
@@ -435,7 +453,7 @@ export default function Home() {
           </div>
 
           <div className=' bg-gradient-to-br from-pink-800 via-grey to-green-700 bg-center'>
-            <div className=' mb-6 text-center  md:w-9/12 mx-4'>
+            <div className=' mb-6 text-center  md:w-full mx-4 md:mb-12'>
               <h1 className='text-4xl font-bold pt-10 '>My Projects</h1>
               <p className='my-6 text-xl'>
                 I have worked on some side projects during my free time.
