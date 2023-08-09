@@ -23,19 +23,6 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const [navbar, setNavbar] = useState(false)
-  const [isDevelopment, setIsDevelopment] = useState('development')
-  const [isModalOpen, setIsModalOpen] = useState(false)
-
-  const handleServiceDisplay = (value: string) => {
-    setIsDevelopment(value)
-  }
-  const openModal = () => {
-    setIsModalOpen(true)
-  }
-
-  const closeModal = () => {
-    setIsModalOpen(false)
-  }
 
   const workExperience = [
     {
