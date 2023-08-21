@@ -133,12 +133,12 @@ export default function Home() {
       content: {
         title: 'Buysikleta Subdivision project',
         sentence:
-        'When I was in my third year of college, I had a part-time job at my sister`s sari-sari store (convenience store). During that time, I had an idea to build an online sari-sari store. In 2018, I worked on the project and then tried to convince many people in my barangay (neighborhood) to use it. I created advertisements and introduced my application to some condominiums, but unfortunately, I didn`t get much response. Two years later, when the pandemic started, I began receiving a lot of online messages from people inquiring about how the application works and how they could place orders. Seizing this opportunity, I started selling products and upgraded my pabili grocery service. For about 2-3 months, the sales were good, and business was promising. However, my success attracted competitors, and soon, many similar applications emerged, which ultimately led to the downfall of my business. Nevertheless, this experience taught me valuable lessons about startups, entrepreneurship, and the importance of adapting to market changes.',
+        'The concept of "Buysikleta" originated from our Subdivision`s challenge, where many residents prefer not to venture outside to purchase their necessities. Concurrently, I noticed a prevalent interest among teenagers in the area towards biking. Thus, I combined these two aspects—the issue of obtaining essentials and the teenagers` enthusiasm for biking.',
         techStack: {
-          FrontEnd: 'Javascript, Jquery, CSS, Bootstrap, AJAX',
-          BackEnd: 'PHP, Laravel, ',
-          Database: 'phpMyAdmin, MySQL',
-          Deployment: 'cPanel',
+          FrontEnd: 'Next Js, Tailwind, Axios',
+          BackEnd: 'Supabase',
+          Database: 'PostgreSQL database',
+          Deployment: 'AWS Route 53 and amplifiy',
         },
       },
     },
