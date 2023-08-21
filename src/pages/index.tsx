@@ -14,6 +14,8 @@ import Metro from './../../public/metrobank.jpg'
 import Collabera from './../../public/collabera.jpg'
 import Pabiligrocery from './../../public/pabiligrocery.png'
 import Buysikleta from './../../public/buysikleta.png'
+import Pharma from './../../public/pharma.png'
+import Insurance from './../../public/insurance.png'
 import Modal from '@/components/Modal'
 import TransitionExample from '@/components/ServiceModal'
 import ServicesModal from '@/components/ServiceModal'
@@ -49,7 +51,7 @@ export default function Home() {
       image: Arlov,
       design: 1,
       content: {
-        title: 'Web Developer at PCI Tech Center | Start-Up Experience',
+        title: 'Fullstack Developer | Start-Up Experience',
         sentence: '',
         techStack: {
           FrontEnd:
@@ -65,7 +67,7 @@ export default function Home() {
       image: Cell5,
       design: 1,
       content: {
-        title: 'Web Developer at PCI Tech Center | Start-Up Experience',
+        title: 'Software Engineer',
         sentence: '',
         techStack: {
           FrontEnd:
@@ -81,7 +83,7 @@ export default function Home() {
       image: MDSCSI,
       design: 1,
       content: {
-        title: 'Web Developer at PCI Tech Center | Start-Up Experience',
+        title: 'Technology Engineer',
         sentence: '',
         techStack: {
           FrontEnd: 'Javascript, Jquery, CSS, Bootstrap, AJAX',
@@ -96,7 +98,7 @@ export default function Home() {
       image: Metro,
       design: 1,
       content: {
-        title: 'Web Developer at PCI Tech Center | Start-Up Experience',
+        title: 'Fullstack React and Node Developer',
         sentence: '',
         techStack: {
           FrontEnd: 'React, Material UI, CSS',
@@ -106,6 +108,7 @@ export default function Home() {
       },
     },
   ]
+  
 
   const personalProjects = [
     {
@@ -142,6 +145,41 @@ export default function Home() {
         },
       },
     },
+    {
+      name: 'Fayne Pharmacy',
+      role: 'Fullstack Developer',
+      image: Pharma,
+      design: 2,
+      content: {
+        title: 'Fayne Pharmacy Point of Sale',
+        sentence:
+        'A pharmacy establishment featuring a point-of-sale system and an order monitoring system, complete with inventory management.',
+        techStack: {
+          FrontEnd: 'Next Js, Tailwind, Axios',
+          BackEnd: 'Supabase',
+          Database: 'PostgreSQL database',
+          Deployment: 'AWS Route 53 and amplifiy',
+        },
+      },
+    },
+    {
+      name: 'Western Guaranty Corporation',
+      role: 'Fullstack Developer',
+      image: Insurance,
+      design: 1,
+      content: {
+        title: 'Business Insurance Permit',
+        sentence:
+        'I spearheaded a project for Western Guaranty Corporation that revolutionized the business permit process in Metro Manila`s local areas, enabling paperless applications and reducing the process time to just 10-15 minutes.',
+        techStack: {
+          FrontEnd: 'Laravel blade, bootstrap, jquery',
+          BackEnd: 'Laravel',
+          Database: 'Mysql',
+          Deployment: 'Cpanel',
+        },
+      },
+    },
+    
   ]
 
   return (
@@ -441,10 +479,8 @@ export default function Home() {
 
           <div className=' bg-gradient-to-br from-pink-800 via-grey to-green-700 bg-center'>
             <div className=' mb-6 text-center  md:w-full mx-4 md:mb-12'>
-              <h1 className='text-4xl font-bold pt-10 '>My Projects</h1>
-              <p className='my-6 text-xl'>
-                I have worked on some side projects during my free time.
-              </p>
+              <h1 className='text-4xl font-bold pt-10 '>My Projects / Freelance Projects</h1>
+      
             </div>
 
             <div className='grid grid-cols-1 gap-2 md:grid-cols-2 md:w-9/12 md:m-auto h-full'>
